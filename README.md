@@ -1,2 +1,2 @@
 # RAM-DOM
-Proyecto de emprendimiento sencillito
+Proyecto de Emprendimiento Sencillito poara la school

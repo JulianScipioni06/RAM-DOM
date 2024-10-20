@@ -77,6 +77,20 @@ body {
     background-color: red;
 }
 
+.container-productos {
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(4, 200px);
+    border: 2px solid blue;
+}
+
+.content-productos {
+    grid-gap: 10px;
+    background: #fff;
+    border: 6px solid slateblue;
+}
+
 .aside {
     grid-area: aside;
     width: 100%;

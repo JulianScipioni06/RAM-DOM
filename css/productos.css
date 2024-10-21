@@ -74,21 +74,60 @@ body {
 .main {
     grid-area: main;
     width: 100%;
-    background-color: red;
+
 }
 
 .container-productos {
-    height: 100%;
-    display: grid;
-    grid-template-rows: repeat(3, 200px);
-    grid-template-columns: repeat(4, 200px);
-    border: 2px solid blue;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-height: 100vh;
+    height: max-content;
+
+}
+
+.container-productos span {
+    font-size: 25px;
+}
+
+.container-productos > span {
+    color: #eee;
 }
 
 .content-productos {
-    grid-gap: 10px;
-    background: #fff;
-    border: 6px solid slateblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    height: max-content;
+}
+
+.productos {
+    width: 200px;
+    height: 100%;
+    display: grid;
+    background-color: #eee;
+    border: #ddd 5px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.productos .img-productos {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.productos .img-productos img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.productos span {
+    font-size: 16px;
 }
 
 .aside {

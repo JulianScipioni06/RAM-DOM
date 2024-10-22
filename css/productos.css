@@ -8,7 +8,7 @@ body {
     display: grid;
     grid-template: 
     "header header header" 100px
-    "main main aside" 100vh
+    "main main main" 100vh
     "footer footer footer" 200px;
     background: url(/images/fondo.jpg);
     background-repeat: no-repeat;
@@ -74,7 +74,9 @@ body {
 .main {
     grid-area: main;
     width: 100%;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-productos {
@@ -98,7 +100,7 @@ body {
 
 .content-productos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
     height: max-content;
 }
@@ -107,9 +109,9 @@ body {
     width: 200px;
     height: 100%;
     display: grid;
-    background-color: #eee;
-    border: #ddd 5px solid;
-    border-radius: 10px;
+    background-color: #222;
+    color: #fff;
+    border: #000 5px solid;
     cursor: pointer;
 }
 
@@ -118,6 +120,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: #fff;
+    border-bottom: 8px solid #000;
 }
 
 .productos .img-productos img {
@@ -128,14 +131,8 @@ body {
 
 .productos span {
     font-size: 16px;
+    margin: 4px;
 }
-
-.aside {
-    grid-area: aside;
-    width: 100%;
-    background-color: green;
-}
-
 
 .footer {
     grid-area: footer;

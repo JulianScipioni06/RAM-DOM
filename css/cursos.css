@@ -26,6 +26,7 @@ body {
     justify-content: space-between;
     background: transparent;
     align-items: center;
+    position: absolute;
     width: 100%;
 }
 
@@ -73,66 +74,33 @@ body {
 
 .main {
     grid-area: main;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.container-productos {
-    padding-top: 50px;
+.container-cursos {
+    border: 2px solid red;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    min-height: 100vh;
-    height: max-content;
-    margin-bottom: 15px;
-}
-
-.container-productos span {
-    font-size: 25px;
-}
-
-.container-productos > span {
-    color: #eee;
-}
-
-.content-productos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    height: max-content;
-}
-
-.productos {
-    width: 200px;
     height: 100%;
-    display: grid;
-    background-color: #222;
+}
+
+.container-cursos h1 {
     color: #fff;
-    border: #000 5px solid;
-    cursor: pointer;
+}
+.content-cursos {
+    border: 2px solid blue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100vh;
+    gap: 10px;
+    padding: 15px;
 }
 
-.productos .img-productos {
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    background-color: #fff;
-    border-bottom: 8px solid #000;
-}
-
-.productos .img-productos img {
+.cursos {
+    border: 2px solid green;
     width: 100%;
     height: 100%;
-    object-fit: contain;
 }
 
-.productos span {
-    font-size: 16px;
-    margin: 4px;
-}
 
 .footer {
     grid-area: footer;
@@ -183,6 +151,8 @@ body {
     align-self: flex-end;
     color: #555;
 }
+
+
 
 
 

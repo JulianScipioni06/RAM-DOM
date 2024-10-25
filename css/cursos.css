@@ -77,7 +77,6 @@ body {
 }
 
 .container-cursos {
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -85,20 +84,57 @@ body {
 
 .container-cursos h1 {
     color: #fff;
+    margin-left: 15px;
 }
 .content-cursos {
-    border: 2px solid blue;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 100vh;
-    gap: 10px;
+    gap: 15px;
     padding: 15px;
 }
 
 .cursos {
-    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
     width: 100%;
     height: 100%;
+    border: 3px outset #444;
+}
+
+.img-curso {
+    height: 100%;
+    width: 100%;
+}
+
+.img-curso img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info {
+    background: #333;
+    border-top: 8px solid #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.btn {
+    width: 100px;
+    color: #fff;
+    background: #000;
+    border: 2px solid #555;
+    border-radius: 5px;
+    box-shadow: 3px 3px 15px 0 #000;
+}
+.btn:hover {
+    background: #222;
+    border: 2px solid #fff;
+    box-shadow: 3px 3px 15px 0 #fff;
 }
 
 

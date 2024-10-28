@@ -81,6 +81,8 @@ body {
     gap: 5px;
     color: #fff;
     background-color: #666;
+    border: 3px solid #000;
+    border-bottom: none;
 }
 
 .mvv {
